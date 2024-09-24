@@ -1,0 +1,216 @@
+body, html {
+    height: 100%;
+  }
+  
+  .bg {
+    /* The image used */
+    background-image: url("images/womanInRain.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #850101;
+    text-align: center;
+  }
+
+  h1, p{
+    margin: 0;
+  }
+
+  h1{
+    font-size: 12vw;
+    font-family: 'Tangerine', serif;
+    text-shadow: 2px 2px 4px rgb(212,175,55);
+  }
+
+  .job_title{
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2vw;
+    text-shadow: 1px 1px 2px rgb(212,175,55);
+  }
+
+  body{
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  h2{
+    text-align: center;
+  }
+
+  .linked_in, .git_hub, .code_wars{
+    height: 2vw;
+    padding: 10px; /* Adjust padding to cover the border */
+    background: transparent;
+  }
+
+a:hover{
+    filter: invert(1);
+}
+
+ul.inline-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul.inline-list .box-effect{
+    display: inline-block;
+    background-color: rgb(241, 117, 28);
+    height: 3vw;
+    width: 8vw;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    box-shadow: 5px 4px 3px rgba(91, 93, 95);
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul.inline-list .skills-box-effect{
+    display: inline-block;
+    background-color: rgb(255,69,0);
+    height: 3vw;
+    width: 8vw;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 8vw;
+    margin-left: 5vw;
+    box-shadow: 5px 4px 3px rgba(91, 93, 95);
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul.inline-list .tech-box-effect{
+    display: inline-block;
+    background-color: rgb(246, 144, 2);
+    height: 3vw;
+    width: 8vw;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 2vw;
+    margin-left: 5vw;
+    box-shadow: 5px 4px 3px rgba(91, 93, 95);
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hover-trigger{
+    position: relative;
+    cursor: pointer;
+    text-decoration:underline;
+    display: flex;
+}
+
+.hover-trigger:hover{
+    color:#850101;
+}
+.hover-text{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 5px;
+    background-color: #333; 
+    color: #fff; 
+    padding: 10px;
+    border-radius: 4px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    white-space: wrap; 
+    z-index: 10;
+}
+
+.hover-trigger:hover .hover-text {
+    visibility: visible;
+    opacity: 1;
+    bottom: -250px; /* Adjust based on your needs */
+}
+
+.Bio_Section{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile_picture{
+    width: 20vw;
+    height: auto;
+    margin-right: 2vw;
+    border-radius: 20%;
+}
+
+.Work_Bio{
+    max-width: fit-content;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw;
+}
+.column{
+    text-align: center;
+    padding: 2vw;
+}
+@keyframes exampleAnimation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.info-box{
+    padding: 1vw;
+    margin: 5px;
+    background-color: pink;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1);
+    border-radius: 10px;
+    cursor: pointer;
+    transform: scale(1);
+    background-color: rgb(255,127,80);
+    animation: exampleAnimation 2s ease-in-out 1;
+}
+.content{
+    display: none;
+
+}
+.info-box:hover .content{
+    display: block;
+    transform: scale(1.1);
+}
