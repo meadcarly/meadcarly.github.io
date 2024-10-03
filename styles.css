@@ -214,3 +214,23 @@ ul.inline-list .tech-box-effect{
     display: block;
     transform: scale(1.1);
 }
+
+.outer{
+    width: 500px;
+    height: 100px;
+    white-space: nowrap;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.outer div{
+    width: 24.5%;
+    background-color: #eee;
+    float: none;
+    height: 90%;
+    margin: 0 0.25%;
+    display: inline-block;
+    zoom: 1;
+}
