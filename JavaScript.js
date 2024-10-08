@@ -1,9 +1,13 @@
-let currentIndex = 1;
+document.addEventListener("DOMContentLoaded", function() {
+    updateCarousel();
+});
+
+let currentIndex = 0;
 
 function updateCarousel(){
     const container = document.querySelector('.project-container');
-    const offset = -currentIndex * (200 + 20);
-    container.style.trasform = `translateX(${offset}px)`;
+    const offset = -currentIndex * (300 + 20);
+    container.style.transform = `translateX(${offset}px)`;
 }
 
 function scrollLeft(){
@@ -14,7 +18,8 @@ function scrollLeft(){
 }
 
 function scrollRight(){
-    if (currentIndex < 2){
+    const totalProjects = document.querySelectorAll('.project').length;
+    if (currentIndex < totalProjects - 3){
         currentIndex++;
         updateCarousel();
     }
