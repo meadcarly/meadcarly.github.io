@@ -263,3 +263,16 @@ ul.inline-list .tech-box-effect{
     font-size: 24px;
     padding: 10px;
 }
+
+.passions{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);  
+    grid-gap: 10px;
+}
+.passion-photos {
+    width: 20vw;
+    height: auto;
+    margin-right: 2vw;
+    border-radius: 10px;
+      
+  } 
