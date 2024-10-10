@@ -1,5 +1,6 @@
 body, html {
     height: 100%;
+    background-color: rgb(232,232,232);
   }
   
   .bg {
@@ -265,14 +266,22 @@ ul.inline-list .tech-box-effect{
 }
 
 .passions{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);  
-    grid-gap: 10px;
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: visible;
+    margin-left: 3vw;
 }
 .passion-photos {
     width: 20vw;
     height: auto;
-    margin-right: 2vw;
+    margin-right: 5px;
     border-radius: 10px;
+    transition: transform 0.3s ease;
       
-  } 
+  }
+
+.passion-photos:hover {
+    transform: scale(1.5); /* Scale the image to 120% on hover */
+}
