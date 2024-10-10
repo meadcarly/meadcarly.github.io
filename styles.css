@@ -1,6 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body, html {
     height: 100%;
-    background-color: rgb(232,232,232);
+    width: 100%
   }
   
   .bg {
@@ -47,9 +51,36 @@ body, html {
     font-weight: 400;
     font-style: normal;
   }
+  .section_one {
+      background-color: antiquewhite;
+      margin: 0;
+      padding: 5px;
+  }
+  
+  .section_two {
+      background-color: rgb(209,190,168);
+      margin: 0;
+      padding: 5px;
+  }
+  
+  .section_three{
+      background-color: antiquewhite;
+      margin: 0;
+  }
+  
+  .section_four{
+      background-color: rgb(209,190,168); 
+      margin: 0;
+      padding: 5px;
+  }
+  .section + .section{
+      margin-top: -10px;
+  }
+  
 
   h2{
     text-align: center;
+    margin: 20px;
   }
 
   .linked_in, .git_hub, .code_wars{
@@ -156,10 +187,11 @@ ul.inline-list .tech-box-effect{
     bottom: -250px; /* Adjust based on your needs */
 }
 
-.Bio_Section{
+#Bio_Section{
     display: flex;
     align-items: center;
     padding: 20px;
+    padding-bottom: 30px;
 }
 
 .profile_picture{
