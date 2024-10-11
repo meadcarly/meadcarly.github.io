@@ -76,10 +76,9 @@
     </section>
         <section class="section_two">
             <h2>Projects</h2>
-            <section class="project-carousel">
-                <button class="scroll-button left" onclick="scrollLeft()"><</button>
-                <div class="project-container">
-                    <div class="project project-small active">
+            <div id="slider">
+                <div class="slides-container">
+                    <div class="slide">
                         <h3>MyFitnessApp</h3>
                         <p>This app is a work in progress aimed for increasing personal health!</p>
                         <p>Written in C# with an ASP.NET Core MVC framework</p>
@@ -88,29 +87,38 @@
                         <p><a class="clickable_link" target="_blank" href="https://drive.google.com/file/d/1gvsTZTNoiIOvxFRODYGnHinrVsPUih58/view?usp=drive_link">Watch me demonstrate!</a></p>
                     </div>
         
-                    <div class="project project-large">
+                    <div class="slide">
                         <h3>ToDo List</h3>
                         <p>Feeling scattered, lost, distracted? Engage with my ToDo List, an organizational console app I created using C#, MySQL, and the code editor JetBrains Rider. Take a look at my code!</p>
                         <a class="clickable_link" target="_blank" href="https://github.com/meadcarly/ToDoListTake2">ToDo List</a>
                     </div>
                 
-                    <div class="project project-small">
+                    <div class="slide">
                         <h3>First HTML/CSS</h3>
                         <p>Would you like to see my first attempt at HTML/CSS? You can see how far I've come from then to now!</p>
                         <a class="clickable_link" target="_blank" href="https://github.com/meadcarly/CSSDemoFirstWebsite">Portfolio Website</a>
                     </div>
-                
+
+                    <div class="slide">
+                        <h3>Using APIs</h3>
+                        <p>I created this project to practice calling APIs</p>
+                        <a class="clickable_link" target="_blank" href="https://github.com/meadcarly/e-fortunes">Funny statements as fortunes</a>
+                    </div>
+                    
                 </div>
-                <button class="scroll-button right" oneclick="scrollRight()">></button>
-            </section>
+                <button class="prev"><</button>
+                <button class="next">></button>
+            </div>
         </section>
     <section id="Bio_Section" class="section_three">
-        <img src="images/RaptorHeadPhoto.jpeg" alt="Carly's profile photo" class="profile_picture">
+        <h2>On a Personal Level</h2>
         <section class="Work_Bio">
-            <h2>On a Personal Level</h2>
-            <p>Hi there!</p>
-            <p>My name is Carly and I am a burgeoning software developer! I know I am new to the game, but when I decided to change careers, I realized that I was not starting over. In fact, I am bringing some pretty powerful skills to the table, even before I begin coding. You see, before this I was a nurse for 13 years and that taught me some valuable things. I won't try to enumerate through all of them, but let me talk about a few.</p>
+            <img src="images/RaptorHeadPhoto.jpeg" alt="Carly's profile photo" class="profile_picture">
+            <div class="personalInfoBox">
+                <br>
+            <p>Hi there! My name is Carly and I am a burgeoning software developer! I know I am new to the game, but when I decided to change careers, I realized that I was not starting over. In fact, I am bringing some pretty powerful skills to the table, even before I begin coding. You see, before this I was a nurse for 13 years and that taught me some valuable things. I won't try to enumerate through all of them, but let me talk about a few.</p>
             <br>
+                <br>
             <ol>
                 <li>I am an organized worker who is able to prioritize, set goals, and get projects done in a timely fashion. While this is absolutely essential as a nurse, it's a welcome skill base in every other career as well.</li>
                 <li>I am well versed in collaboration, have effective communication skills, and I value everyone's insight. These skills make me a great addition to any team.
@@ -118,7 +126,10 @@
                 <li>I am willing to make mistakes. I don't like to, don't get me wrong, but I find that getting in there and trying, making mistakes, and figuring out how to fix them is really the best way to learn. It also helps you grasp the full picture, which makes the job easier in the long run.</li>
             </ol>
             <br>
-            <p>I was in my last position for 10 years. I started with limited experience in that particular field, but I worked hard and I was always asking "why". By the time I decided I was ready for a change, I had co-written an entire orientation manual for new hires, not only for my job but also for the position I suprvised. I am so grateful I was given a chance to build on my skills, and I know I am worth investing in as I transition to this new career.</p>
+                <br>
+            <p>I was in my last position for 10 years. I started with limited experience in that particular field, but I worked hard and I was always asking "why". By the time I decided I was ready for a change, I had co-written an entire orientation manual for new hires, not only for my job but also for the position I suprvised. I am so grateful I was given a chance to build on my skills, and I know I am worth investing in as I transition to this new career.
+            </p>
+            </div>
         </section>
 
     </section>
