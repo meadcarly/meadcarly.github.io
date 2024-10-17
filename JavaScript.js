@@ -16,19 +16,20 @@ function updateButtons(){
 }
 
 document.querySelector('.next').addEventListener('click', () => {
-    if (currentIndex < totalSlides - visibleSlides)
-    {
-        currentIndex++;
-        updateSlides();
-    }
+    currentIndex = (currentIndex + 1) % (totalSlides - visibleSlides + 1);
+    updateSlides();
 });
 
 document.querySelector('.prev').addEventListener('click', () => {
-    if(currentIndex > 0){
+    if(currentIndex > 0)
+    {
         currentIndex--;
-        updateSlides();
-    } 
-    
+    }
+    else
+    {
+        currentIndex = totalSlides - visibleSlides;
+    }
+    updateSlides();
 });
 
 updateSlides();
