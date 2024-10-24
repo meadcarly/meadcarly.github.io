@@ -12,27 +12,29 @@ function updateSlides() {
 
 function updateButtons(){
     document.querySelector('.prev').style.display = currentIndex > 0 ? 'block' : 'none';
-    document.querySelector('.next').style.display = currentIndex < totalSlides - visibleSlides ? 'block' : 'none';
+    document.querySelector('.next').style.display = (currentIndex < totalSlides - visibleSlides) ? 'block' : 'none';
 }
 
 document.querySelector('.next').addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % (totalSlides - visibleSlides + 1);
+    currentIndex++;
+    if (currentIndex > totalSlides - visibleSlides) {
+        currentIndex = 0; // Reset to the first slide
+    }
     updateSlides();
+    updateButtons();
 });
 
 document.querySelector('.prev').addEventListener('click', () => {
-    if(currentIndex > 0)
-    {
-        currentIndex--;
-    }
-    else
-    {
-        currentIndex = totalSlides - visibleSlides;
+    currentIndex--;
+    if (currentIndex < 0) {
+        currentIndex = totalSlides - visibleSlides; // Move to the last set of slides
     }
     updateSlides();
+    updateButtons();
 });
 
 updateSlides();
+updateButtons();
 /*const slides = document.querySelectorAll('.slide');
 let index = 0;
 
